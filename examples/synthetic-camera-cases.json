@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "data_classification": "synthetic",
+  "notice": "Fictional records for architecture demonstration only. Not derived from company data.",
+  "cases": [
+    {
+      "case_id": "SYN-CAM-001",
+      "title": "Synthetic camera preview stability test",
+      "component": "camera",
+      "feature": "rgb_camera",
+      "preconditions": [
+        "Synthetic camera device is available",
+        "Demo application is installed"
+      ],
+      "steps": [
+        {
+          "step_index": 1,
+          "action": "Open the demo camera preview",
+          "expected_result": "The synthetic preview starts without an application error"
+        },
+        {
+          "step_index": 2,
+          "action": "Keep the preview active for the configured demo interval",
+          "expected_result": "The synthetic preview remains active and responsive"
+        }
+      ],
+      "version": "SYN-1.0",
+      "status": "approved",
+      "source_file": "synthetic_camera_cases.json",
+      "source_sheet": null,
+      "source_row": 1,
+      "project_id": "synthetic-demo"
+    },
+    {
+      "case_id": "SYN-CAM-002",
+      "title": "Synthetic camera recovery test",
+      "component": "camera",
+      "feature": "image_quality",
+      "preconditions": [
+        "Synthetic camera stream is active"
+      ],
+      "steps": [
+        {
+          "step_index": 1,
+          "action": "Trigger the demo stream interruption",
+          "expected_result": "The application reports the synthetic interruption"
+        },
+        {
+          "step_index": 2,
+          "action": "Restore the demo stream",
+          "expected_result": "The preview recovers without stale frames"
+        }
+      ],
+      "version": "SYN-1.0",
+      "status": "approved",
+      "source_file": "synthetic_camera_cases.json",
+      "source_sheet": null,
+      "source_row": 2,
+      "project_id": "synthetic-demo"
+    }
+  ]
+}
+
